@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Page 2</title>
+		<link rel="stylesheet" type"text/css" href="style.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="header1.jpg" alt="Header" width="100%"/>
+			<nav>
+				<a href="page1.html">謙太のページ</a> | 
+				<a href="page3.html">Kids Lab CS</a> | 
+				<a href="http://kidslab.co.jp">Kids Lab Home</a>
+			</nav>
+		</header>
+		<section>
+			<h1>危険な動物</h1>
+			<div>
+				<button type="button" onclick="shuffle()">Shuffle Pictures</button>
+			</div>
+		
+			<img class="clpics" id="pic1" src="snake.jpg" alt="Header" width="30%"/>
+			<img class="clpics" id="pic2" src="jaguar.jpg" alt="Header" width="35%"/>
+			<img class="clpics" id="pic3" src="shark.jpg" alt="Header" width="30%"/>
+		</section>
+        <footer>
+			<img src="footer1.jpg" alt="Footer" width="100%"/>
+		</footer>
+		<script>
+			function shuffle(){
+				var pic1 = document.getElementById("pic1");
+				var pic2 = document.getElementById("pic2");
+				var pic3 = document.getElementById("pic3");
+				
+				if(pic1.src.match("snake")){
+					pic1.src = "shark.jpg";
+					pic2.src = "snake.jpg";
+					pic3.src = "jaguar.jpg";
+				} else if(pic1.src.match("shark")){
+					pic1.src = "jaguar.jpg";
+					pic2.src = "shark.jpg";
+					pic3.src = "snake.jpg";
+				} else {
+					pic1.src = "snake.jpg";
+					pic2.src = "jaguar.jpg";
+					pic3.src = "shark.jpg";
+				}
+			}
+		</script>
+	</body>
+</html>

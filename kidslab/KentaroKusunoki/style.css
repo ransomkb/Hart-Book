@@ -1,0 +1,14 @@
+h1, nav{
+	text-align: center;
+	font-family: serif;
+}
+
+h3,h4{
+	font-family: sans-serif;
+	color: blue;
+}
+
+p, li{
+	font-family: serif;
+	color: red;
+}

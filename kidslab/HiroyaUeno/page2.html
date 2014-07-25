@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Page 2</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="header.jpg" alt="Header lmage" width="100%" />
+			<nav>
+				<a href="page1.html">My Page</a> | 
+				<a href="page3.html">Kids Lab CS</a> | 
+				<a href="http://kidslab.co.jp">Kids Lab Home</a>
+			</nav>
+		</header>
+		<section>
+			<h1>Things I Like</h1>
+			<h4>Pazudora</h4>
+			<div>
+				<button type="button" onclick="shuffle()">Shuffle Pictures</button>
+			</div>
+		
+			<img class="clpics" id="pic1" src="pd3.jpg" alt="Pazudora lmage 1" width="80%" />
+			<img class="clpics" id="pic2" src="pd2.jpg" alt="Pazudora lmage 2" width="40%" />
+			<img class="clpics" id="pic3" src="pazudora.jpg" alt="Pazudora lmage 3" width="50%" />
+		</section>
+		<footer>
+			<img src="footer.jpg" alt="Footer lmage" width="100%" />
+		</footer>
+		<script>
+			function shuffle(){
+				var pic1 = document.getElementById("pic1");
+				var pic2 = document.getElementById("pic2");
+				var pic3 = document.getElementById("pic3");
+				
+				if(pic1.src.match("pd3")){
+					pic1.src = "pazudora.jpg";
+					pic2.src = "pd3.jpg";
+					pic3.src = "pd2.jpg";
+				} else if(pic1.src.match("pazudora")){
+					pic1.src = "pd2.jpg";
+					pic2.src = "pazudora.jpg";
+					pic3.src = "pd3.jpg";
+				} else {
+					pic1.src = "pd3.jpg";
+					pic2.src = "pd2.jpg";
+					pic3.src = "pazudora.jpg";
+				}
+			}
+		</script>
+	</body>
+</html>

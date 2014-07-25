@@ -1,0 +1,22 @@
+h1, nav{
+	text-align: center;
+	font-family: serif;
+}
+
+h1{
+	color: green;
+}
+
+h3,h4{
+	font-family: serif;
+	color: blue;
+}
+
+p,li{
+	font-family: sans-serif;
+	color: purple;
+}
+
+.clpics{
+	border: green solid 1px;
+}
